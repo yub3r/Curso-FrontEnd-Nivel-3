@@ -1,13 +1,12 @@
 $color: yellow;
-  //Font Family
-  $font: 'Roboto Condensed',
-  sans-serif; //Color
-  $mediumTurquoise: #34C6D3;
-  $steelGrey: #41464B;
-  $blueBayoux: #64707B;
-  $white: #fff;
-  $black: #000;
-
+//Font Family
+$font: 'Roboto Condensed',
+sans-serif; //Color
+$mediumTurquoise: #34C6D3;
+$steelGrey: #41464B;
+$blueBayoux: #64707B;
+$white: #fff;
+$black: #000;
 //$NombreDeLaVariable:
 
 /*===============================================
@@ -104,15 +103,16 @@ h3 {
     }
 }
 
-                        
 .btn-blue {
     border-color: $mediumTurquoise;
     color: $mediumTurquoise;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: $mediumTurquoise;
         color: $white;
     }
 }
+
 
 /*===============================================
                             Animate
@@ -208,6 +208,7 @@ h3 {
 /*===============================================
                         About
 ================================================*/
+
 #about-content-box {
     float: left;
     height: 700px;
@@ -225,19 +226,14 @@ h3 {
 }
 
 #about {
-
     .content-title {
-
         h3 {
-            text-align:left
+            text-align: left
         }
-
         .content-title-underline {
             margin: 0 0 30px 0;
         }
-
     }
-
 }
 
 #about-desc {
@@ -255,31 +251,31 @@ h3 {
     border-top: 700px solid transparent;
 }
 
+
 /*===============================================
                         Work
 ================================================*/
+
 .row {
     .no-padding-lr {
-        padding-left:0;
-        padding-right:0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+
+
 /*===============================================
                 Animacion Zoom a Work
 ================================================*/
+
 .img-wrapper {
-
     overflow: hidden;
-
     img {
-
         transition: transform .5s ease;
-
         &:hover {
-            transform:scale(1.5);
+            transform: scale(1.5);
         }
     }
-
 }
 
 
@@ -340,5 +336,85 @@ h4.team-member-designation {
 .icon-gray {
     i {
         color: $steelGrey;
+    }
+}
+
+
+/*===============================================
+                    Testimonials
+================================================*/
+
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+}
+
+#testimonials {
+    .content-box {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+#customers-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial {
+    img {
+        max-width: 120px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+
+/* = ADD Content= */
+
+.content-title-white {
+    h3 {
+        color: $white;
+    }
+}
+
+.testimonial {
+    blockquote {
+        border: 0;
+        font-family: Georgia, sans-serif;
+        font-style: italic;
+        padding: 6px 150px;
+        position: relative;
+        p {
+            color: $white;
+        }
+         ::before {
+            content: "\201C";
+            font-size: 80px;
+            font-style: normal;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 100px;
+        }
+         ::after {
+            content: "\201D";
+            font-size: 80px;
+            font-style: normal;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 100px;
+            bottom: 0;
+        }
+    }
+}
+
+.testimonial-author {
+    p {
+        color: $white;
+        font-size: 17px;
+        strong {
+            display: block;
+        }
     }
 }
