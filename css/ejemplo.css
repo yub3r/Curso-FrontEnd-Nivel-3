@@ -1,0 +1,14 @@
+body {
+  background: black; }
+
+.colorRed {
+  background-color: red; }
+
+.colorB {
+  background-color: rgba(39, 8, 218, 0.966); }
+
+#cover {
+  font-size: 50px; }
+
+.mas {
+  font-size: 80px; }
