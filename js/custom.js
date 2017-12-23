@@ -93,7 +93,7 @@ $("a.smooth-scroll").click(function(evento) {
         scrollTop: $(section).offset().top
     });
 
-}, 1250);
+});
 
 
 /*===============================================

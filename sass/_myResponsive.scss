@@ -1,0 +1,65 @@
+            // Large Devices
+            @media (min-width:1200px) {
+                //  En este tamaño se visualiza todo bien 
+                //    #home-heading {
+                //         h3 {
+                //             color: blue;
+                //         }
+                //     }
+                // }
+                //Medium Devices
+            }
+            
+            @media (min-width: 992px) and (max-width: 1199px) {
+                .navbar {
+                    background: rgba(0, 0, 0, .7);
+                    padding: 0;
+                    .navbar-nav {
+                        float: left;
+                    }
+                }
+                .vesco-nav-wrapper {
+                    padding: 0;
+                }
+            }
+            
+            //Small Devices
+            @media (min-width: 768px) and (max-width: 991px) {
+                .navbar {
+                    background: rgba(0, 0, 0, 0.7);
+                    padding: 0;
+                    .navbar-nav {
+                        float: left;
+                    }
+                }
+                .vesco-nav-wrapper {
+                    padding: 0;
+                }
+            }
+            
+            // Extra Small
+            @media (max-width:767px) {
+                #home-heading {
+                    h3 {
+                        color: red;
+                    }
+                }
+            }
+            
+            // Extra Small
+            @media (max-width:480px) {
+                #home-heading {
+                    h3 {
+                        color: pink;
+                    }
+                }
+            }
+            
+            // Extra Small
+            @media (max-width:320px) {
+                #home-heading {
+                    h3 {
+                        color: purple;
+                    }
+                }
+            }
